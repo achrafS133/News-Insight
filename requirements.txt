@@ -1,0 +1,30 @@
+# Orchestration
+apache-airflow>=2.8.0,<3.0.0
+apache-airflow-providers-databricks>=6.0.0
+apache-airflow-providers-http>=4.0.0
+
+# Databricks / Spark (pin to your cluster DBR)
+pyspark>=3.5.0
+delta-spark>=3.0.0
+
+# Embeddings & vector
+sentence-transformers>=3.0.0
+torch>=2.0.0
+pinecone>=5.0.0
+transformers>=4.40.0
+
+# Agents & LLM
+openai>=1.30.0
+httpx>=0.27.0
+tenacity>=8.2.0
+tiktoken>=0.7.0
+
+# Observability
+langfuse>=2.50.0
+
+# Config & utilities
+pydantic>=2.7.0
+pydantic-settings>=2.3.0
+pyyaml>=6.0.0
+python-dotenv>=1.0.0
+feedparser>=6.0.0

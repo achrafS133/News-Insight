@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "news-insight-engine"
+version = "0.1.0"
+description = "Live News-to-Insight multi-agent multilingual RAG platform"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = []
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = [
+  "config*",
+  "shared*",
+  "observability*",
+  "vector*",
+  "agents*",
+  "databricks*",
+]
+
+[project.scripts]
+news-insight = "run_insight:main"

@@ -1,0 +1,29 @@
+# Global and regional news / market feed definitions for Airflow ingestion.
+feeds:
+  - feed_id: reuters_world
+    region: global
+    language_hint: en
+    source_type: rss
+    url: https://feeds.reuters.com/reuters/worldNews
+    poll_interval_minutes: 15
+
+  - feed_id: bbc_world
+    region: global
+    language_hint: en
+    source_type: rss
+    url: http://feeds.bbci.co.uk/news/world/rss.xml
+    poll_interval_minutes: 15
+
+  - feed_id: marketwatch_top
+    region: americas
+    language_hint: en
+    source_type: rss
+    url: https://feeds.marketwatch.com/marketwatch/topstories/
+    poll_interval_minutes: 30
+
+  - feed_id: euronews_business
+    region: emea
+    language_hint: en
+    source_type: rss
+    url: https://www.euronews.com/rss?level=theme&name=business
+    poll_interval_minutes: 30
