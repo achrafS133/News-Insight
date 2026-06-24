@@ -1,0 +1,10 @@
+﻿# Keep Cursor scoped to this repo only — ignore heavy/local dirs
+.venv/
+**/.venv/
+**/__pycache__/
+**/.pytest_cache/
+**/.mypy_cache/
+**/.ruff_cache/
+**/*.egg-info/
+news-insight-engine/data/
+news-insight-engine/.env
